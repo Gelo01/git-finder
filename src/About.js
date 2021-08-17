@@ -1,12 +1,13 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React, { Component } from 'react'
+import Navbar from './components/Navbar'
 import {
 	Article,
 	ArticleContent,
 	ArticleMedia,
-} from './article'
+} from './components/article'
 
-export default function AboutPage() {
+class About extends Component {
+	render() {
 	return (
       <div>
         <Navbar/>
@@ -35,4 +36,6 @@ export default function AboutPage() {
       </div>
 	
 	)
+	}
 }
+export default About
